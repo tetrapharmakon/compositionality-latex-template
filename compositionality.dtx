@@ -1,0 +1,87 @@
+% \iffalse meta-comment
+%% =============================================================================
+%%
+%% compositionality <VERSION> (<DATE>)
+%%
+%% =============================================================================
+%
+% %%%=[ DRIVER ]================================================================
+%
+%<*driver>
+\documentclass[a4paper,full]{l3doc}
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+
+\begin{document}
+  \DocInput{\jobname.dtx}
+  \PrintChanges
+  \PrintIndex
+\end{document}
+%</driver>
+%
+% \fi
+%
+% \changes{0.1.0}{2023/05/31}{Initial version}
+%
+% \GetFileInfo{\jobname.cls}
+%
+% \title{^^A
+%   The \cls{\jobname} document class^^A
+%   \thanks{Thanks!}\\^^A
+%   \fileinfo^^A
+% }
+%
+% \author{^^A
+%   J Doe\\^^A
+%   \texttt{\href{mailto:j.doe@email.com}{j.doe@email.com}}^^A
+% }
+%
+% \date{\fileversion~(\filedate)}
+%
+% \maketitle
+%
+% ^^A=[ DOCUMENTATION ]=========================================================
+%
+% \begin{documentation}
+%
+% \section{Documentation}
+%
+% \end{documentation}
+%
+% ^^A=[ PACKAGE ]===============================================================
+%
+% \begin{implementation}
+%
+% \section{Implementation}
+%
+% Open the \pkg{DocStrip} guards.
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+%
+% Identify the internal prefix (\LaTeX3 \pkg{DocStrip} convention).
+%    \begin{macrocode}
+%<@@=shrimp>
+%    \end{macrocode}
+%
+% Load the essential support (\pkg{expl3}) \enquote{up-front}.
+%
+%    \begin{macrocode}
+\RequirePackage{expl3}[2023/05/11]
+%    \end{macrocode}
+%
+% Identify the package and give the over all version information.
+%    \begin{macrocode}
+\ProvidesExplClass
+  {compositionality}
+  {<DATE>}
+  {<VERSION>}
+  {The Compositionality article class}
+%    \end{macrocode}
+%
+%
+% \iffalse
+%</package>
+% \fi
+% \end{implementation}

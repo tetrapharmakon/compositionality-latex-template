@@ -11,6 +11,9 @@
 *.cb
 *.cb2
 .*.lb
+*.cls
+*.hd
+compositionality.pdf
 
 ## Intermediate documents:
 *.dvi
